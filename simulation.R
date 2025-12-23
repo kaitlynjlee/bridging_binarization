@@ -47,7 +47,7 @@ new_x_less <- function(pre_x, threshold, mean = 0, sd = 1, w = 0){
   })
 }
 
-# threshold setting X < 0.25 to X = 0.25
+# threshold setting X < 6 to X = 6
 threshold_x <- function(pre_x, threshold){
   map2_dbl(pre_x, threshold, function(x, threshold){
     if(x < threshold){
